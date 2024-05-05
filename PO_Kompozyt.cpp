@@ -36,7 +36,6 @@ int main()
 	catch (std::domain_error event)
 	{
 		std::cout << event.what() << std::endl;
-		
 	}
 	std::cout << bohater << std::endl;
 }
