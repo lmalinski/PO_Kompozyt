@@ -37,13 +37,10 @@ void CiagPomieszczen::zbadaj(Postac& postac) const
 		getchar();
 		switch (odp)
 		{
-		case 't':
-		case 'T':
+		case 't': case 'T':
 			m_pomieszczenia[pom]->zbadaj(postac);
 			break;
-		case 'n':
-		case 'N':
-		default:
+		case 'n': case 'N': default:
 			throw std::domain_error("Wycofales sie!");
 		}
 

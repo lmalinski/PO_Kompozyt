@@ -5,8 +5,6 @@
 
 int main()
 {
-	Postac bohater;
-	
 	//Tworzenie lochu:
 	CiagPomieszczen Loch;
 	Loch.dodaj(std::make_unique<Skarbiec>());
@@ -28,6 +26,7 @@ int main()
 	Loch.dodaj(std::make_unique<Pulapka>());
 
 	//Exploracja lochu:
+	Postac bohater;
 	try
 	{
 		Loch.zbadaj(bohater);
